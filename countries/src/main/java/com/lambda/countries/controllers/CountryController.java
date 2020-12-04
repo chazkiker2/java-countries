@@ -11,10 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 
 
@@ -218,4 +215,26 @@ public class CountryController {
 	/*
 	 * http://localhost:2019/population/median
 	 */
+//	@GetMapping(value="/population/median", produces = {"application/json"})
+//	public ResponseEntity<?> findMedianPopulation() {
+//		List<Country> countries = getStarterList();
+//		List<Long> populations = new ArrayList<>();
+//
+//		for (Country c : countries) {
+//			populations.add(c.getPopulation());
+//		}
+//
+//
+//		boolean isEven = populations.size() % 2 == 0;
+//
+//		Country medianCountry = countries.get(0);
+//		Country secondMedianCountry = null;
+//
+//		Collections.sort(populations);
+//		double middle = populations.size()/2;
+//		if (populations.size()%2 == 1) {
+//			middle = (populations[populations.size()/2] + populations[populations])
+//		}
+//
+//	}
 }
